@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Travel the World">
+    <meta name="author" content="Tristan Kay">
+    <title>Gazetteer</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="leaflet.css"/>
+
+
+
+    
+    <!-- Custom styles for this template -->
+    <link href="screen3.css" rel="stylesheet">
+  </head>
+  <body id= "economy">
+    
+    <div class="container-fluid h-100">
+      <div class="row justify-content-center h-100">
+        <div class="col bg-red">
+          <div class="h-100 d-flex flex-column">
+            <div class="row justify-content-center bg-blue flex-grow-1">
+              <div id = "map" style = " background-size:100% 100%;">
+                <a href="screen2.html" style ="    
+                border-radius: 10px;
+                padding: .5rem;
+                position: absolute;
+                margin: 1rem;
+                background: #ffffff59;
+                border: none;
+                width: 62px;
+                font-weight: 900;
+                font-size: 31px;
+                color: white !important;
+                vertical-align: middle;
+                text-align: center;
+                align-self: center;
+                text-decoration: none;
+                z-index: 999;
+                
+            "><img src = "return2white.svg" style = "width: 3rem; height: 3rem; padding: 0.4rem;"></a>
+                <div class="text-white align-middle"></div>
+              </div>
+              
+            </div>
+            <div class="row justify-content-center bg-purple" id = "content">
+              <div class="text-black">
+                <div style="height:60vh">
+                  
+                  <div class="container" style="max-width: 100%;">
+                    
+                    <div class="row">
+                      <div class="col align-content-start" style="min-width: 49vw;">
+                        <h1 id="ph_name">United Kingdom</h1>
+                      <h5 id="ph_capital">London</h5>
+                      </div>
+                      <div class="col-auto">
+                       
+                      </div>
+                     
+                    </div>
+                  </div>
+                  
+                  <div class="row" style="padding-top: 2rem; padding-bottom: 2rem;">
+                    <div class="col greyblock" style = "margin:1rem; margin-top:.5rem; margin-right:.5rem; text-align: center;">
+                      <h2 id="ph_gdp">null</h2>
+                        <h6>GDP</h6>
+                    </div>
+                    <div class="col greyblock" style = "margin:1rem; margin-top:.5rem; margin-left:.5rem; text-align: center;">
+                      <h2 id="ph_inflationrate">null</h2>
+                        <h6>Inflation Rate</h6>
+                    </div>
+                    <div class="col greyblock" style = "margin:1rem; margin-top:.5rem; margin-left:.5rem; text-align: center;">
+                      <h2 id="ph_annualbudget">null</h2>
+                        <h6>Annual Budget</h6>
+                    </div>
+                    <div class="col greyblock" style = "margin:1rem; margin-top:.5rem; margin-left:.5rem; text-align: center;">
+                      <h2 id="ph_top10">null</h2>
+                        <h6>Top 10% Wealth Distribution</h6>
+                    </div>
+                    <div class="col greyblock" style = "margin:1rem; margin-top:.5rem; margin-left:.5rem; text-align: center;">
+                      <h2 id="ph_low10">null</h2>
+                        <h6>Lowest 10% Wealth Distribution</h6>
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 2rem;">
+                    <h3 style = "margin-bottom: 1rem;">Exchange Rate</h3>
+                    
+                </div>
+                <div class="row" style="padding-top: 2rem;">
+                  <div class = "col greyblock" style="margin: 1rem;">
+                    <div class = "row" style = "text-align: center;">
+                      <div class="col" style ="vertical-align: middle;">
+                        <h2>1</h2>
+                        <h4>EUR</h4>
+                      </div>
+                      <div class="col" style ="margin-top: auto; margin-bottom: auto;">
+                        <h4>=</h4>
+                      </div>
+                      <div class="col" style ="vertical-align: middle;">
+                        <h2 id="ph_currencyvalue">2</h2>
+                        <h4 id="ph_currencycode">GBP</h4>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                <div class="row">
+            
+                    <div class="col greyblock" style="margin: 1rem;">
+                      <div class="row" style="text-align: center;">
+                        <div class="col" style="vertical-align: middle;">
+                          <h2>1</h2>
+                          <h4>GBP</h4>
+                        </div>
+                        <div class="col" style="margin-top: auto; margin-bottom: auto;">
+                          <h4>=</h4>
+                        </div>
+                        <div class="col" style="vertical-align: middle;">
+                          <h2 id="ph_currencyvalue_gbp">6.36</h2>
+                          <h4 id="ph_currencycode">BRL</h4>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="col greyblock" style="margin: 1rem;">
+                      <div class="row" style="text-align: center;">
+                        <div class="col" style="vertical-align: middle;">
+                          <h2>1</h2>
+                          <h4>USD</h4>
+                        </div>
+                        <div class="col" style="margin-top: auto; margin-bottom: auto;">
+                          <h4>=</h4>
+                        </div>
+                        <div class="col" style="vertical-align: middle;">
+                          <h2 id="ph_currencyvalue_usd">6.36</h2>
+                          <h4 id="ph_currencycode">BRL</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="col greyblock" style="margin: 1rem;">
+                      <div class="row" style="text-align: center;">
+                        <div class="col" style="vertical-align: middle;">
+                          <h2>1</h2>
+                          <h4>JPY</h4>
+                        </div>
+                        <div class="col" style="margin-top: auto; margin-bottom: auto;">
+                          <h4>=</h4>
+                        </div>
+                        <div class="col" style="vertical-align: middle;">
+                          <h2 id="ph_currencyvalue_jpy">6.36</h2>
+                          <h4 id="ph_currencycode">BRL</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="col greyblock" style="margin: 1rem;">
+                      <div class="row" style="text-align: center;">
+                        <div class="col" style="vertical-align: middle;">
+                          <h2>1</h2>
+                          <h4>CNY</h4>
+                        </div>
+                        <div class="col" style="margin-top: auto; margin-bottom: auto;">
+                          <h4>=</h4>
+                        </div>
+                        <div class="col" style="vertical-align: middle;">
+                          <h2 id="ph_currencyvalue_cny">6.36</h2>
+                          <h4 id="ph_currencycode">BRL</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                
+                <div class="row" style="margin-top: 3rem;">
+                  <h3 style = "margin-bottom: 3rem;">Imports & Exports</h3>
+                  
+              </div>
+
+              <div class="row">
+                <div class="col-7" id="import_categorycol" style = "text-align: left;">
+                  <h2 class="greyblock">Imports</h2>
+            
+                </div>
+                <div class="col-3" id="import_amountcol" style = "text-align: center;">
+                  <h2 class="greyblock">Amount (M)</h2>
+                 
+                </div>
+                <div class="col-2" id="import_yearcol" style = "text-align: center;">
+                  <h2 class="greyblock">Year</h2>
+               
+                </div>
+
+              </div>
+
+             
+
+            <div class="row" style="padding-bottom: 2rem; padding-top: 3rem;">
+              <div class="col-7" id="export_categorycol" style = "text-align: left;">
+                <h2 class="greyblock">Exports</h2>
+          
+              </div>
+              <div class="col-3" id="export_amountcol" style = "text-align: center;">
+                <h2 class="greyblock">Amount (M)</h2>
+               
+              </div>
+              <div class="col-2" id="export_yearcol" style = "text-align: center;">
+                <h2 class="greyblock">Year</h2>
+             
+              </div>
+
+            </div>
+
+            
+             
+
+              
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="leaflet.js"></script>
+    <script src="screen3.js"></script>
+
+      
+  </body>
+</html>

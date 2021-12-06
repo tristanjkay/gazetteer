@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Travel the World">
+    <meta name="author" content="Tristan Kay">
+    <title>Gazetteer</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="leaflet.css"/>
+
+
+
+    
+    <!-- Custom styles for this template -->
+    <link href="screen3.css" rel="stylesheet">
+  </head>
+  <body id="general">
+    
+    <div class="container-fluid h-100">
+      <div class="row justify-content-center h-100">
+        <div class="col bg-red">
+          <div class="h-100 d-flex flex-column">
+            
+            <div class="row justify-content-center bg-blue flex-grow-1">
+              <div id = "map" style = " background-size:100% 100%;">
+                <a href="screen2.html" style ="    
+                border-radius: 10px;
+                padding: .5rem;
+                position: absolute;
+                margin: 1rem;
+                background: #ffffff59;
+                border: none;
+                width: 62px;
+                font-weight: 900;
+                font-size: 31px;
+                color: white !important;
+                vertical-align: middle;
+                text-align: center;
+                align-self: center;
+                text-decoration: none;
+                z-index: 999;
+                
+            "><img src = "return2white.svg" style = "width: 3rem; height: 3rem; padding: 0.4rem;"></a>
+                <div class="text-white align-middle"></div>
+              </div>
+              
+            </div>
+            <div class="row justify-content-center bg-purple" id = "content">
+              <div class="text-black">
+                <div style="height:60vh">
+                  
+                  <div class="container" style="max-width: 100%;">
+                    
+                    <div class="row">
+                      <div class="col align-content-start" style="min-width: 49vw;">
+                        <h1 id = "ph_name">United Kingdom</h1>
+                      <h5 id = "ph_capital">London</h5>
+                      </div>
+                      <div class="col-auto">
+                       
+                      </div>
+                      <div class="col col-2" style="text-align: end;">
+                        <!--<h1 class="temp-text">17°</h1>-->
+                      </div>
+                      <!-- <div class="col col-2 weather-icon" style="text-align: end;">
+                        <img src="placeholder.jpg" alt="" style="width: 6rem;">
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class ="row" style="padding: 2rem;">
+                    <div class ="col-lg-6 col-md-6 col-sm-12">
+                      <p id ="ph_descriptionfull">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat vitae quam sit amet aliquet. Donec sed facilisis felis, vel ultricies nunc. Nullam tellus ex, lacinia non tristique quis, auctor in lorem. Phasellus pretium nunc ac ligula bibendum mollis. Ut aliquam congue sapien eget porta. Quisque pharetra maximus sem, id porttitor urna ullamcorper at. Integer congue metus vitae tellus dictum, sit amet pulvinar quam tincidunt. Nulla convallis quam vitae bibendum lobortis.
+
+Sed volutpat lacus ut lorem blandit finibus. Maecenas aliquet, libero a consectetur bibendum, mi urna condimentum urna, id blandit sem elit in nibh. Ut at dapibus lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse id vestibulum nibh. Sed vestibulum blandit bibendum. Sed eleifend et leo in cursus.
+
+
+                      </p>
+                    </div>
+                    <div class ="col-lg-4 col-md-4 col-sm-12" style="max-width: inherit; margin-left: 3rem; margin-right: 2rem;">
+                      <img id="ph_flag" src= "placeholder.png" style = "border-radius: 20px; width: 100%;">
+                      
+                      <div class="col greyblock" style= "margin-top: 3rem; padding: 2rem">
+                        <h2>Continent</h2>
+                        <h3 id = "ph_continent" style="font-size: 1.4rem; font-weight: 400;">{continent}</h3>
+                        <br>
+                          <h2>Size</h2>
+                          <div class="row" style="flex-wrap: wrap;">
+                        <h3 id = "ph_size" style="font-size: 1.4rem; font-weight: 400; width:auto">{area}</h3>
+                        <h3 id = "ph_size" style="font-size: 1.4rem; font-weight: 400; width:auto">sq km</h3>
+                      </div>
+
+                        <br>
+                        <h2>Population</h2>
+                        <h3 id = "ph_population" style="font-size: 1.4rem; font-weight: 400;">{population}</h3>
+                        <br>
+                        <h2>Currency</h2>
+                        <div class="row" style="flex-wrap: wrap;">
+                        <h3 id = "ph_currencyname" style="font-size: 1.4rem; font-weight: 400; width:auto">{currencyname}</h3>
+                        <h3 id = "ph_currencycode" style="font-size: 1.4rem; font-weight: 400; width:auto">{currencycode}</h3>
+                        </div>
+                        <br>
+                        <h2>GDP</h2>
+                        <h3 id = "ph_gdp" style="font-size: 1.4rem; font-weight: 400;">{gdp}</h3>
+                        <br>
+                      </div>
+                      
+
+                    </div>
+                  </div>
+                  
+                  
+                
+                
+             
+           
+             
+
+              
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="leaflet.js"></script>
+    <script src="screen3.js"></script>
+
+      
+  </body>
+</html>

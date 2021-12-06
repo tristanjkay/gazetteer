@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Travel the World">
+    <meta name="author" content="Tristan Kay">
+    <title>Gazetteer</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link rel="stylesheet" href="leaflet.css"/>
+
+
+
+
+
+    
+    <!-- Custom styles for this template -->
+    <link href="screen2.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="container-fluid h-100">
+      <div class="row justify-content-center h-100">
+        <div class="col bg-red">
+          <div class="h-100 d-flex flex-column">
+            
+            <div class="row justify-content-center bg-blue flex-grow-1">
+              <div id = "map" style = " background-size:100% 100%;">
+                <a id = "backButton" href="index.html" style ="    
+                border-radius: 10px;
+                padding: .5rem;
+                position: absolute;
+                margin: 1rem;
+                background: #ffffff59;
+                border: none;
+                width: 62px;
+                font-weight: 900;
+                font-size: 31px;
+                color: white !important;
+                vertical-align: middle;
+                text-align: center;
+                align-self: center;
+                text-decoration: none;
+                z-index: 9999;
+                
+            "><img src = "return2white.svg" style = "width: 3rem; height: 3rem; padding: 0.4rem;"></a>
+                <div class="text-white align-middle"></div>
+              </div>
+              
+            </div>
+            <div class="row justify-content-center bg-purple" id = "content">
+              <div class="text-black">
+                <div style="height:60vh">
+                  <a href="s3general.html"  style="text-decoration: none; color: black !important;">
+                  <h1 id = "ph_name">United Kingdom</h1>
+                  <h5 id = "ph_capital">London</h5>
+                  <p id = "ph_description" style="font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit illo recusandae atque vitae dolorum, labore voluptas, dolorem aspernatur expedita quisquam ad quaerat, veritatis autem asperiores porro aut ipsa repellat.</p>
+                  <b style="font-weight: bold;">Read More</b>
+                </a>
+                  <a href="s3economy.html" style="text-decoration: none; color: black !important;">
+                    <div class = "greyblock" style="margin-top: 2rem;">
+                      <div class = "row" style = "text-align: center;">
+                        <div class="col" style ="vertical-align: middle;">
+                          <h2 id="ph_origincurrencyvalue" style = "font-size: 3rem;">1</h2>
+                          <h4 id="ph_origincurrencycode">GBP</h4>
+                        </div>
+                        <div class="col" style ="margin-top: auto; margin-bottom: auto;">
+                          <h4>=</h4>
+                        </div>
+                        <div class="col" style ="vertical-align: middle;">
+                          <h2 id = "ph_currencyvalue" style = "font-size: 3rem;">2</h2>
+                          <h4 id = "ph_currencycode">___</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  
+                  <div class="row" id="pois" style="margin-top: 2rem;">
+                    <h3 style = "margin-bottom: 1rem;">Places to Visit</h3>
+
+
+                  </div>
+                  <div style="margin-top: 2rem;">
+                    <h3 id = "ph_weathertitle" style = "margin-bottom: 1rem;">Today (London)</h3>
+                    <a href="s3weather.html" style="text-decoration: none; color: black !important;">
+                    <div class = "greyblock" style="margin-top: 2rem;">
+                      <div class = "row" style = "text-align: center;">
+                        <div class="col" style ="vertical-align: middle;">
+                            <img id = "ph_weathericon" src="placeholder.jpg" alt="" style="width:100%">
+                        </div>
+                        <div class="col" style ="margin-top: auto; margin-bottom: auto;">
+                          <h2 id = "ph_temperature" style="font-size: 4rem;">17°</h2>
+                          <h6 id = "ph_feelslike">Feels like 17°</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+                  <div style="margin-top: 2rem;">
+                    <h3 style = "margin-bottom: 1rem;">Latest News</h3>
+                    <a href="s3news.html" style="text-decoration: none; color: black !important;">
+                    <div class = "greyblock" style="margin-top: 2rem; padding: 0px;">
+                      <div class = "row" style = "text-align: left; padding-left: 1rem; padding-top: 1rem; padding-bottom: .5rem; padding-right: 2rem;">
+                        
+                        <div class="col-9" style ="margin-top: auto; margin-bottom: auto;">
+                          <h6 id = "art1description">Lorem ipsum dolor sit, amet consectetur..</h6>
+                        </div>
+                        <div class="col-3" style ="vertical-align: middle; margin-top: 2rem; margin-bottom: 2rem;">
+                          <h4 id = "art1date">01/12/12</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="s3news.html" style="text-decoration: none; color: black !important;">
+                    <div class = "greyblock" style="margin-top: 1rem; padding: 0px;">
+                      <div class = "row" style = "text-align: left; padding-left: 1rem; padding-top: 1rem; padding-bottom: .5rem; padding-right: 2rem;">
+                        
+                        <div class="col-9" style ="margin-top: auto; margin-bottom: auto;">
+                          <h6 id = "art2description">Lorem ipsum dolor sit, amet consectetur..</h6>
+                        </div>
+                        <div class="col-3" style ="vertical-align: middle; margin-top: 2rem; margin-bottom: 2rem;">
+                          <h4 id = "art2date">01/12/12</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                    <a href="s3news.html" style="text-decoration: none; color: black !important;">
+                    <div class = "greyblock" style="margin-top: 1rem; padding: 0px;">
+                      <div class = "row" style = "text-align: left; padding-left: 1rem; padding-top: 1rem; padding-bottom: .5rem; padding-right: 2rem;">
+                        
+                        <div class="col-9" style ="margin-top: auto; margin-bottom: auto;">
+                          <h6 id = "art3description">Lorem ipsum dolor sit, amet consectetur..</h6>
+                        </div>
+                        <div class="col-3" style ="vertical-align: middle; margin-top: 2rem; margin-bottom: 2rem;">
+                          <h4 id = "art3date">01/12/12</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+    
+                  
+                  </div>
+
+                  <div style="margin-top: 2rem;">
+                    <h3 style = "margin-bottom: 1rem;">Flights & Tourism</h3>
+                    <a href="s3flights.html" style="text-decoration: none; color: black !important;">
+                    <div class = "greyblock" style="margin-top: 2rem; padding: 3rem;">
+                      <div class = "row" style = "text-align: center;">
+                        <div class= "col align-middle" style="margin-top: auto; margin-bottom: auto;">
+                          <h4 id= "ph_departfrom">London</h4>
+                          <h6 id= "ph_departtime">LHW 14:00</h6>
+                        </div>  
+                        <div class= "col align-middle" style="margin-top: auto; margin-bottom: auto;">
+                          <i class="fas fa-plane" style="font-size: xxx-large; color: #E1E1E1;"></i>
+                        </div>  
+                        <div class= "col align-middle" style="margin-top: auto; margin-bottom: auto;">
+                          <h4 id= "ph_arrivalto">Brazil</h4>
+                          <h6 id= "ph_arrivaltime">LHW 14:00</h6>  
+                        </div>                   
+                          
+                        </div>
+                      
+
+                      </div>
+                      
+                    </div>
+                    <div class="row" style="padding-bottom: 4rem;">
+                      <div class="col greyblock" style = "margin:1rem; margin-top:.5rem; margin-right:.5rem; text-align: center;">
+                        <h2 id = "ph_tourismincome">0M</h2>
+                          <h6>Annual Income</h6>
+                      </div>
+                      <div class="col greyblock" style = "margin:1rem; margin-top:.5rem; margin-left:.5rem; text-align: center;">
+                        <h2 id="ph_flights">0</h2>
+                          <h6>Annual Inbound Tourists</h6>
+                      </div>
+                    
+                    </div>
+                  </a>
+                    
+                    
+    
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+
+    <!-- Javascript -->
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="leaflet.js"></script>
+    <script src="screen2.js"></script>
+
+   
+    
+
+      
+  </body>
+</html>
